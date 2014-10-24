@@ -23,10 +23,14 @@ ActiveRecord::Schema.define(version: 20141024142725) do
   add_index "bookmarks", ["user_id"], name: "index_bookmarks_on_user_id"
 
   create_table "categories", force: true do |t|
-    t.string   "title"
+    t.integer  "bookmark_id"
+    t.integer  "hashtag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "categories", ["bookmark_id"], name: "index_categories_on_bookmark_id"
+  add_index "categories", ["hashtag_id"], name: "index_categories_on_hashtag_id"
 
   create_table "hashtags", force: true do |t|
     t.string   "title"
