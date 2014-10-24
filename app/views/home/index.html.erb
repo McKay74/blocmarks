@@ -3,8 +3,8 @@
   <h1>Blocmarks</h1>
   <p>Blocmarks is a way to share url's!</p>
   <p>
-      <%= link_to "Sign In", class: 'btn btn-primary' %> or 
-      <%= link_to "Sign Up for an Account", class: 'btn btn-primary' %> today!
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or 
+      <%= link_to "Sign Up for an Account", new_user_registration_path, class: 'btn btn-primary' %> today!
       <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
   </p>
 </div>
