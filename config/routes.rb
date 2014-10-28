@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   post :incoming, to: 'incoming#create'
+
+  resources :bookmarks
 end

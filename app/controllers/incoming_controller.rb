@@ -10,7 +10,7 @@ class IncomingController < ApplicationController
     # @user = User.find_by_email(params[:sender])
     # @bookmark = Bookmark.new
     # @bookmark.user = @user
-    # @bookmark.url = # find the url param from "params object"
+    # @bookmark.url = # find the url param from "params object" => params[:stripped-text]
     # @hashtags = params[:subject] # "#newyork, #travel, #time" => ["#newyork", "#travel", "#time"] (split, scan)
     # @hashtags.each do |hashtag|
     #     # associating the hashtag with bookmark.

@@ -1,5 +1,10 @@
 class BookmarksController < ApplicationController
   def index
-    @bookmark = Bookmark.all
+    @bookmarks = Bookmark.all
   end
+
+  def show
+    @bookmarks = Bookmark.find(params[:id])
+  end
+  
 end
